@@ -27,7 +27,6 @@ import TestPrep from "./Pages/TestPrep"
 import UniProg from "./Pages/UniProg"
 import Vacancies from "./Pages/Vacancies"
 import NavBar from './Components/NavBar';
-import Platforms from './Pages/Platforms';
 
 function App() {
 
@@ -64,8 +63,6 @@ function App() {
         <Route path="/vacancies" element={<Vacancies />} />
       </Routes>
     </BrowserRouter>
-
-    <Platforms/>
     </>
   )
 }
