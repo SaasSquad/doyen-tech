@@ -26,12 +26,14 @@ import Technologies from "./Pages/Technologies"
 import TestPrep from "./Pages/TestPrep"
 import UniProg from "./Pages/UniProg"
 import Vacancies from "./Pages/Vacancies"
+import NavBar from './Components/NavBar';
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
+      <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
