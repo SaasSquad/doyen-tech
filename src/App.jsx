@@ -1,29 +1,31 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "../src/Pages/HomePage"
-import AboutUs from "../src/Pages/AboutUs"
-import Academic from "../src/Pages/Academic"
-import Applications from "../src/Pages/Applications"
-import BecomeTutor from "../src/Pages/BecomeTutor"
-import Blog from "../src/PagesBlog"
-import CollEdProg from "../src/Pages/CollEdProg"
-import CompSkills from "../src/Pages/CompSkills"
-import ContactUs from "../src/Pages/ContactUs"
-import DesignSkills from "../src/Pages/DesignSkills"
-import Donate from "../src/Pages/Donate"
-import InstantApp from "../src/Pages/InstantApp"
-import MusicSkills from "../src/Pages/MusicSkills"
-import OnlineShop from "../src/Pages/AboutUs"
-import OnlineTut from "../src/Pages/OnlineTut"
-import Pricing from "../src/Pages/Pricing"
-import ProgSkills from "../src/Pages/ProgSkills"
-import RequestTutor from "../src/Pages/RequestTutor"
-import Scholarships from "../src/Pages/Scholarships"
-import Team from "../src/Pages/Team"
-import Technologies from "../src/Pages/Technologies"
-import TestPrep from "../src/Pages/TestPrep"
-import UniProg from "../src/Pages/UniProg"
-import Vacancies from "../src/Pages/Vacancies"
+import HomePage from "./Pages/HomePage"
+import AboutUs from "./Pages/AboutUs"
+import Academic from "./Pages/Academic"
+import Applications from "./Pages/Applications"
+import BecomeTutor from "./Pages/BecomeTutor"
+import Blog from "./Pages/Blog"
+import CollEdProg from "./Pages/CollEdProg"
+import CompSkills from "./Pages/CompSkills"
+import ContactUs from "./Pages/ContactUs"
+import DesignSkills from "./Pages/DesignSkills"
+import Donate from "./Pages/Donate"
+import InstantApp from "./Pages/InstantApp"
+import MusicSkills from "./Pages/MusicSkills"
+import OnlineShop from "./Pages/AboutUs"
+import OnlineTut from "./Pages/OnlineTut"
+import Pricing from "./Pages/Pricing"
+import ProgSkills from "./Pages/ProgSkills"
+import RequestTutor from "./Pages/RequestTutor"
+import Scholarships from "./Pages/Scholarships"
+import Stakeholders from "./Pages/Stakeholders"
+import SkillDev from "./Pages/SkillDev"
+import Team from "./Pages/Team"
+import Technologies from "./Pages/Technologies"
+import TestPrep from "./Pages/TestPrep"
+import UniProg from "./Pages/UniProg"
+import Vacancies from "./Pages/Vacancies"
 
 function App() {
 
@@ -35,19 +37,28 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/academic" element={<Academic />} />
         <Route path="/applications" element={<Applications />} />
-        <Route path="/becomeTutor" element={<BecomeTutor />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/applications" element={<Applications />} />
+        <Route path="/becometutor" element={<BecomeTutor />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/colledprog" element={<CollEdProg />} />
+        <Route path="/compskills" element={<CompSkills />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/designskills" element={<DesignSkills />} />
+        <Route path="/donate" element={<Donate />} />
+        <Route path="/instantapp" element={<InstantApp />} />
+        <Route path="/musicskills" element={<MusicSkills />} />
+        <Route path="/onlineshop" element={<OnlineShop />} />
+        <Route path="/onlintut" element={<OnlineTut />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/progskills" element={<ProgSkills />} />
+        <Route path="/requesttutor" element={<RequestTutor />} />
+        <Route path="/scholarships" element={<Scholarships />} />
+        <Route path="/skilldev" element={<SkillDev />} />
+        <Route path="/stakeholders" element={<Stakeholders />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/technologies" element={<Technologies />} />
+        <Route path="/testprep" element={<TestPrep />} />
+        <Route path="/uniprog" element={<UniProg />} />
+        <Route path="/vacancies" element={<Vacancies />} />
       </Routes>
     </BrowserRouter>
     </>
