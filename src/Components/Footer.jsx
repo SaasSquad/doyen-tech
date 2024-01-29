@@ -4,4 +4,4 @@ const Footer = () => {
         <p>Footer</p>
         </>
     )
-}
+} 
