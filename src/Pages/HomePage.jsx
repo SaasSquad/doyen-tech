@@ -1,3 +1,4 @@
+import ApplyProg from "../Components/ApplyProg";
 import Facility from "../Components/Facilities";
 import Tutor from "../Components/Tutor";
 
@@ -5,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <section className="m-6">
-        <h1 className="lg:text-5xl text-center font-bold mb-9">
+        <h1 className="lg:text-7xl text-center font-bold mb-9 lg:p-16">
           Welcome to Doyen Emerging Technologies
         </h1>
         <p className="text-center lg:text-2xl mb-8">
@@ -16,7 +17,7 @@ const HomePage = () => {
         </p>
         <button className="py-4 px-6 bg-yellow-400 flex m-auto text-center rounded">Contact Us</button>
       </section>
-      <section className="m-16">
+      <section className="lg:m-20">
         <p className="text-[#07294d] text-2xl">About us</p>
         <h2 className="lg:text-6xl mb-3 text-[#222429] font-bold">
           We make you a wonder at Doyen Emerging Technologies
@@ -50,16 +51,13 @@ const HomePage = () => {
           </li>
         </ul>
 
-        <button>Explore More</button>
+        <button className="py-4 mt-6 px-6 bg-yellow-400 flex text-center rounded">Explore More</button>
       </section>
-      <section>
-        <div>
-          <div>
-            <h3>Apply for Academic Programme</h3>
-            <button>Apply Now</button>
-          </div>
-          <div>Apply for Skill development Programme</div>
-        </div>
+      <section className="lg:m-20">
+       <div className="text-white-400 flex">
+        <ApplyProg title="Apply for academic programme" text="You can apply for any of our academic programmes: Nursery, Primary, Junior Secondary, Senior Secondary, College of Education, Polytechnic and University." />
+        <ApplyProg title="Apply for skill development programme" text="You can apply for different skill development programmes: Cyber security, ICT, AI, Online Collaboration, Robotics, Catering, Tailoring, etc."/>
+       </div>
       </section>
       <section>
         <h3>Featured Courses</h3>
