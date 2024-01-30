@@ -1,4 +1,5 @@
 import ApplyProg from "../Components/ApplyProg";
+import Course from "../Components/Course";
 import Facility from "../Components/Facilities";
 import Platforms from "../Components/Platforms";
 import Tutor from "../Components/Tutor";
@@ -6,7 +7,7 @@ import Tutor from "../Components/Tutor";
 const HomePage = () => {
   return (
     <>
-      <section className="m-6">
+      <section className="m-6 ">
         <h1 className="lg:text-7xl text-center font-bold mb-9 lg:p-16">
           Welcome to Doyen Emerging Technologies
         </h1>
@@ -16,14 +17,16 @@ const HomePage = () => {
           convenience of your chosen place and pace at your level while still
           maintaining the trend.
         </p>
-        <button className="py-4 px-6 bg-yellow-400 flex m-auto text-center rounded">Contact Us</button>
+        <button className="py-4 px-6 bg-yellow-400 flex m-auto text-center rounded">
+          Contact Us
+        </button>
       </section>
       <section className="lg:m-20">
         <p className="text-[#07294d] text-2xl">About us</p>
         <h2 className="lg:text-6xl mb-3 text-[#222429] font-bold">
           We make you a wonder at Doyen Emerging Technologies
         </h2>
-        <ul className="opacity-75 font-medium">
+        <ul className="opacity-50 font-semibold">
           <li>
             Our mission at doyeneTech is to teach learners at various levels:
             Nursery, Primary, Secondary, College of Education, Polytechnic and
@@ -52,19 +55,47 @@ const HomePage = () => {
           </li>
         </ul>
 
-        <button className="py-4 mt-6 px-6 bg-yellow-400 flex text-center rounded">Explore More</button>
+        <button className="py-4 mt-6 px-6 bg-yellow-400 flex text-center rounded">
+          Explore More
+        </button>
       </section>
-      <section>
-        <Platforms/>
+      <section className="">
+        <Platforms />
+      </section>
+      <section className="">
+        <div className="text-white-400 flex lg:m-20">
+          <ApplyProg
+            title="Apply for academic programme"
+            text="You can apply for any of our academic programmes: Nursery, Primary, Junior Secondary, Senior Secondary, College of Education, Polytechnic and University."
+          />
+          <ApplyProg
+            title="Apply for skill development programme"
+            text="You can apply for different skill development programmes: Cyber security, ICT, AI, Online Collaboration, Robotics, Catering, Tailoring, etc."
+          />
+        </div>
       </section>
       <section className="lg:m-20">
-       <div className="text-white-400 flex">
-        <ApplyProg title="Apply for academic programme" text="You can apply for any of our academic programmes: Nursery, Primary, Junior Secondary, Senior Secondary, College of Education, Polytechnic and University." />
-        <ApplyProg title="Apply for skill development programme" text="You can apply for different skill development programmes: Cyber security, ICT, AI, Online Collaboration, Robotics, Catering, Tailoring, etc."/>
-       </div>
-      </section>
-      <section>
-        <h3>Featured Courses</h3>
+        <p className="text-[#07294d] text-2xl">Our Courses</p>
+        <h3 className="lg:text-6xl font-medium opacity-75 mb-4">
+          Featured Courses
+        </h3>
+        <div className="lg:flex gap-4">
+          <Course
+            img_src="https://i.ibb.co/z6z4z4z/tutor.jpg"
+            title="ASSEMBLY LANGUAGE PROGRAMMING"
+            tutor="Dr. Mary Adedoyin"
+          />
+          <Course
+            img_src="https://i.ibb.co/z6z4z4z/tutor.jpg"
+            title="ASSEMBLY LANGUAGE PROGRAMMING"
+            tutor="Dr. Mary Adedoyin"
+          />
+          <Course
+            img_src="https://i.ibb.co/z6z4z4z/tutor.jpg"
+            title="ASSEMBLY LANGUAGE PROGRAMMING"
+            tutor="Dr. Mary Adedoyin"
+          />
+        </div>
       </section>
       <section>
         <h2>Our Facilities</h2>
