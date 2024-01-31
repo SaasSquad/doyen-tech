@@ -3,15 +3,21 @@ import Course from "../Components/Course";
 import Facility from "../Components/Facilities";
 import Platforms from "../Components/Platforms";
 import Tutor from "../Components/Tutor";
+import banner from '../assets/Images/banner.jpg'
 
 const HomePage = () => {
   return (
     <>
-      <section className="m-6 ">
-        <h1 className="lg:text-7xl text-center font-bold mb-9 lg:p-16">
+      <section className="flex flex-col relative font-bold h-[448px] bg-contain text-white"
+    style={{
+        backgroundSize: 'cover',
+        backgroundImage: `url('${banner}')`,
+        backgroundPosition: 'center center'
+    }}>
+        <h1 className="lg:text-5xl text-center font-bold mt-16 mb-9">
           Welcome to Doyen Emerging Technologies
         </h1>
-        <p className="text-center lg:text-2xl mb-8">
+        <p className="text-center lg:text-2xl mb-4">
           A place to invest in your future. DoyeneTech is here to give you
           knowledge that you need in this competing global economy at the
           convenience of your chosen place and pace at your level while still
