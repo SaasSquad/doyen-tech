@@ -80,12 +80,12 @@ const HomePage = () => {
           />
         </div>
       </section>
-      <section className="lg:m-20">
+      <section className="lg:m-20 m-16">
         <p className="text-[#07294d] text-2xl">Our Courses</p>
-        <h3 className="lg:text-6xl font-medium opacity-75 mb-4">
+        <h3 className="lg:text-6xl text-2xl font-medium opacity-75 mb-4">
           Featured Courses
         </h3>
-        <div className="lg:flex gap-4">
+        <div className="block sm:flex lg:gap-4 sm:gap-2">
           <Course
             img_src="https://i.ibb.co/z6z4z4z/tutor.jpg"
             title="ASSEMBLY LANGUAGE PROGRAMMING"
