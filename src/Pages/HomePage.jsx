@@ -1,6 +1,6 @@
 import ApplyProg from "../Components/ApplyProg";
 import Course from "../Components/Course";
-import Facility from "../Components/Facilities";
+import Facility from "../Components/Facility";
 import Platforms from "../Components/Platforms";
 import Tutor from "../Components/Tutor";
 import banner from '../assets/Images/banner.jpg'
@@ -65,8 +65,8 @@ const HomePage = () => {
           Explore More
         </button>
       </section>
-      <section className="">
-        <Platforms />
+      <section>
+        <Platforms/>
       </section>
       <section className="">
         <div className="text-white-400 flex lg:m-20">
@@ -80,12 +80,12 @@ const HomePage = () => {
           />
         </div>
       </section>
-      <section className="lg:m-20">
+      <section className="lg:m-20 m-16">
         <p className="text-[#07294d] text-2xl">Our Courses</p>
-        <h3 className="lg:text-6xl font-medium opacity-75 mb-4">
+        <h3 className="lg:text-6xl text-2xl font-medium opacity-75 mb-4">
           Featured Courses
         </h3>
-        <div className="lg:flex gap-4">
+        <div className="block sm:flex lg:gap-4 sm:gap-2">
           <Course
             img_src="https://i.ibb.co/z6z4z4z/tutor.jpg"
             title="ASSEMBLY LANGUAGE PROGRAMMING"
@@ -103,8 +103,9 @@ const HomePage = () => {
           />
         </div>
       </section>
-      <section>
-        <h2>Our Facilities</h2>
+      <section className="lg:m-20 m-2 bg-[#07294d] text-white-400 md:flex">
+        <video src="" alt="Logo" className="md:flex-1"></video>
+       <div> <h2 className ="text-3xl sm:text-4xl md:text-4xl text-center text-white mb-4 font-extrabold md:flex-1 md:mt-12">Our Facilities</h2>
         <Facility
           title="Global Certificates"
           text="We offer you reputable certificate(s) with global recognition."
@@ -118,7 +119,7 @@ const HomePage = () => {
           text="There are up-to-date books and an e-library at your fingertips.
 
 "
-        />
+        /></div>
       </section>
       <section className="tutors">
         <h3>Meet our tutors</h3>
