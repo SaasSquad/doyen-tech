@@ -3,9 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-
-        const currentYear = new Date().getFullYear();
-    
     return(
         <>
         <div className="mt-0 bg-[#07294d] w-screen px-3 text-white block relative lg:flex lg:flex-row lg:pb-10">
@@ -79,7 +76,7 @@ const Footer = () => {
             </section>
         </div>
         <div className="bg-[#021D3A] text-white text-center pt-10 pb-10 lg:flex lg:flex-row lg:px-10">
-            <p className="pr-15">Doyen Emerging Technology {currentYear}, All rights reserved.</p> <br />
+            <p className="pr-20">Doyen Emerging Technology 2020, All rights reserved.</p> <br />
             <span>Online Tutoring |&#160;</span><span> Online Shop |&#160;</span><span> Mobile App |&#160;</span><br /><span> Legal & Policies |&#160; </span><span> FAQ</span>
         </div>
         </>
