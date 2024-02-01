@@ -55,7 +55,9 @@ const HomePage = () => {
         <button className="py-4 mt-6 px-6 bg-yellow-400 flex text-center rounded">Explore More</button>
       </section>
       <section>
-        <Platforms/>
+        
+        <Platforms text = "Best Platform to Learn Everything"/>
+
       </section>
       <section className="lg:m-20">
        <div className="text-white-400 flex">
