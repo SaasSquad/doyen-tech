@@ -1,6 +1,8 @@
 import aboutImg1 from "../assets/Images/aboutImg1.jpg"
+import Feedback from "../Components/Feedback";
 
 const AboutUs = () => {
+
     return ( <>
     <div className="bg-white">
     <div className="pt-10 pb-10 pl-5 bg-blue-600">
@@ -69,6 +71,8 @@ const AboutUs = () => {
             <p className="text-white pt-2">Global Teachers</p>
         </div>
     </div>
+    <div className="pt-40 pb-40">images of tutors</div>
+    <Feedback />
     </div>
     </> );
 }
