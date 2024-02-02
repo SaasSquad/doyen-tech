@@ -113,7 +113,7 @@ const HomePage = () => {
         </div>
         <div className="md:w-1/2">
           {" "}
-          <h2 className="text-3xl sm:text-4xl md:text-4xl text-center text-white mb-8 font-extrabold md:mt-12">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl text-center text-white mb-12 md:mb-16 font-extrabold md:mt-12">
             Our Facilities
           </h2>
           <Facility
