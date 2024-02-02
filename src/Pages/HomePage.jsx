@@ -3,15 +3,20 @@ import Course from "../Components/Course";
 import Facility from "../Components/Facility";
 import Platforms from "../Components/Platforms";
 import Tutor from "../Components/Tutor";
+import facilityBook from "../assets/Images/facility-book.png";
+import facilitycontract from "../assets/Images/facility-contract.png";
+import facilitytable from "../assets/Images/facility-table.png";
 
 const HomePage = () => {
   return (
     <>
-      <section className="flex flex-col banner_fade relative font-bold h-[448px] bg-black bg-contain text-white px-4 md:px-12"
-    style={{
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center'
-    }}>
+      <section
+        className="flex flex-col banner_fade relative font-bold h-[448px] bg-black bg-contain text-white px-4 md:px-12"
+        style={{
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+        }}
+      >
         <h1 className="lg:text-5xl text-center font-bold mt-16 mb-9">
           Welcome to Doyen Emerging Technologies
         </h1>
@@ -64,7 +69,7 @@ const HomePage = () => {
         </button>
       </section>
       <section>
-        <Platforms/>
+        <Platforms />
       </section>
       <section className="">
         <div className="text-white-400 flex lg:m-20">
@@ -101,23 +106,35 @@ const HomePage = () => {
           />
         </div>
       </section>
-      <section className="lg:m-20 m-2 bg-[#07294d] text-white-400 md:flex">
-        <video src="" alt="Logo" className="md:flex-1"></video>
-       <div> <h2 className ="text-3xl sm:text-4xl md:text-4xl text-center text-white mb-4 font-extrabold md:flex-1 md:mt-12">Our Facilities</h2>
-        <Facility
-          title="Global Certificates"
-          text="We offer you reputable certificate(s) with global recognition."
-        />
-        <Facility
-          title="Alumni Support"
-          text="Your fulfilment after the successful completion of your programme is our duty. Don't worry, we are here for you!"
-        />
-        <Facility
-          title="Books & E-Library"
-          text="There are up-to-date books and an e-library at your fingertips.
+      <section className="bg-[#07294d] text-white-400 md:flex">
+      <div className="md:w-1/2 flex items-center justify-center md:h-screen">
+          {" "}
+          <video src="" alt="Logo" className=""></video>
+        </div>
+        <div className="md:w-1/2">
+          {" "}
+          <h2 className="text-3xl sm:text-4xl md:text-4xl text-center text-white mb-8 font-extrabold md:mt-12">
+            Our Facilities
+          </h2>
+          <Facility
+            img_src={facilitycontract}
+            title="Global Certificates"
+            text="We offer you reputable certificate(s) with global recognition."
+          />
+          <Facility
+            img_src={facilitytable}
+            title="Alumni Support"
+            text="Your fulfilment after the successful completion of your programme is our duty. Don't worry, we are here for you!"
+          />
+          <Facility
+            img_src={facilityBook}
+            title="Books & E-Library"
+            text="There are up-to-date books and an e-library at your fingertips.
 
 "
-        /></div>
+          />
+        </div>
+        
       </section>
       <section className="tutors">
         <h3>Meet our tutors</h3>
