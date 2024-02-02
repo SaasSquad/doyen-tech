@@ -111,8 +111,7 @@ const HomePage = () => {
           {" "}
           <video src="" alt="Logo" className=""></video>
         </div>
-        <div className="md:w-1/2">
-          {" "}
+        <div className="md:w-1/2 pb-12">
           <h2 className="text-3xl sm:text-4xl md:text-4xl text-center text-white mb-12 md:mb-16 font-extrabold md:mt-12">
             Our Facilities
           </h2>
