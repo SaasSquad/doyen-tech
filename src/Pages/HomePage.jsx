@@ -3,15 +3,13 @@ import Course from "../Components/Course";
 import Facility from "../Components/Facility";
 import Platforms from "../Components/Platforms";
 import Tutor from "../Components/Tutor";
-import banner from '../assets/Images/banner.jpg'
 
 const HomePage = () => {
   return (
     <>
-      <section className="flex flex-col relative font-bold h-[448px] bg-contain text-white"
+      <section className="flex flex-col banner_fade relative font-bold h-[448px] bg-black bg-contain text-white"
     style={{
         backgroundSize: 'cover',
-        backgroundImage: `url('${banner}')`,
         backgroundPosition: 'center center'
     }}>
         <h1 className="lg:text-5xl text-center font-bold mt-16 mb-9">
@@ -23,7 +21,7 @@ const HomePage = () => {
           convenience of your chosen place and pace at your level while still
           maintaining the trend.
         </p>
-        <button className="py-4 px-6 bg-yellow-400 flex m-auto text-center rounded">
+        <button className="py-4 px-6 text-[#072975] bg-yellow-500 flex m-auto text-center rounded">
           Contact Us
         </button>
       </section>
