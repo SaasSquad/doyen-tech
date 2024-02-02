@@ -7,7 +7,7 @@ import Tutor from "../Components/Tutor";
 const HomePage = () => {
   return (
     <>
-      <section className="flex flex-col banner_fade relative font-bold h-[448px] bg-black bg-contain text-white"
+      <section className="flex flex-col banner_fade relative font-bold h-[448px] bg-black bg-contain text-white px-4 md:px-12"
     style={{
         backgroundSize: 'cover',
         backgroundPosition: 'center center'

@@ -7,7 +7,7 @@ import { faCartShopping, faMagnifyingGlass, faBars, faX } from '@fortawesome/fre
 const Header = () => {
     const [mobileDropdown, setMobileDropdown] = useState(false)
     return (
-        <header className="relative z-50 bg-white text-[#072975] font-bold py-4">
+        <header className="relative z-50 bg-white text-[#072975] font-bold py-4 md:px-10">
             <div className={`flex justify-between items-center px-4`}>
                 <a href="/" className="logo">
                     <img alt="Logo"
