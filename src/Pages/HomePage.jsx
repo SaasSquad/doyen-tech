@@ -3,15 +3,23 @@ import Course from "../Components/Course";
 import Facility from "../Components/Facility";
 import Platforms from "../Components/Platforms";
 import Tutor from "../Components/Tutor";
+import facilityBook from "../assets/Images/facility-book.png";
+import facilitycontract from "../assets/Images/facility-contract.png";
+import facilitytable from "../assets/Images/facility-table.png";
+import drmarypic from "../assets/Images/Dr_Mary_Pic.png"
+import mrcaleb from "../assets/Images/mr celeb odogiyon.jpg"
+import pstsegun from "../assets/Images/pst. segun Adedoyin.png"
 
 const HomePage = () => {
   return (
     <>
-      <section className="flex flex-col banner_fade relative font-bold h-[448px] bg-black bg-contain text-white px-4 md:px-12"
-    style={{
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center'
-    }}>
+      <section
+        className="flex flex-col banner_fade relative font-bold h-[448px] bg-black bg-contain text-white px-4 md:px-12"
+        style={{
+          backgroundSize: "cover",
+          backgroundPosition: "center center",
+        }}
+      >
         <h1 className="lg:text-5xl text-center font-bold mt-16 mb-9">
           Welcome to Doyen Emerging Technologies
         </h1>
@@ -64,7 +72,7 @@ const HomePage = () => {
         </button>
       </section>
       <section>
-        <Platforms/>
+        <Platforms />
       </section>
       <section className="">
         <div className="text-white-400 flex lg:m-20">
@@ -101,48 +109,89 @@ const HomePage = () => {
           />
         </div>
       </section>
-      <section className="lg:m-20 m-2 bg-[#07294d] text-white-400 md:flex">
-        <video src="" alt="Logo" className="md:flex-1"></video>
-       <div> <h2 className ="text-3xl sm:text-4xl md:text-4xl text-center text-white mb-4 font-extrabold md:flex-1 md:mt-12">Our Facilities</h2>
-        <Facility
-          title="Global Certificates"
-          text="We offer you reputable certificate(s) with global recognition."
-        />
-        <Facility
-          title="Alumni Support"
-          text="Your fulfilment after the successful completion of your programme is our duty. Don't worry, we are here for you!"
-        />
-        <Facility
-          title="Books & E-Library"
-          text="There are up-to-date books and an e-library at your fingertips.
+      <section className="bg-[#07294d] text-white-400 md:flex">
+        <div className="md:w-1/2 flex items-center justify-center md:h-screen">
+          {" "}
+          <video src="" alt="Logo" className=""></video>
+        </div>
+        <div className="md:w-1/2 pb-12">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl text-center text-white mb-12 md:mb-16 font-extrabold md:mt-12">
+            Our Facilities
+          </h2>
+          <Facility
+            img_src={facilitycontract}
+            title="Global Certificates"
+            text="We offer you reputable certificate(s) with global recognition."
+          />
+          <Facility
+            img_src={facilitytable}
+            title="Alumni Support"
+            text="Your fulfilment after the successful completion of your programme is our duty. Don't worry, we are here for you!"
+          />
+          <Facility
+            img_src={facilityBook}
+            title="Books & E-Library"
+            text="There are up-to-date books and an e-library at your fingertips.
 
 "
-        /></div>
+          />
+        </div>
       </section>
-      <section className="tutors">
-        <h3>Meet our tutors</h3>
-        <p>
+      <section className="tutors mt-6 p-4 sm:m-12 lg:m-20">
+        <div>
+        <h3 className="text-[#07294d] text-6xl mb-6">Meet our tutors</h3>
+        <p className="mb-4 opacity-50 text-2xl font-bold">
           Our tutors are qualified and adept professionals selected from all
           over the globe. Also, they are passionate about teaching. They are
           ready to take you from your present state or status to where you
-          should be with our special plans designed for you. Our tutors will
-          make you see the future and help you to get there. Our site has
-          different tutors for all academic programmes, test preparation, and
-          skill development. There are tutors for every learner/student. Also,
-          there are live classes and recorded videos. There are tutors for
-          nursery, primary, junior secondary, senior secondary, undergraduate
-          and postgraduate subjects/courses and pricing is available upon
-          request. No matter your level of study, you will find online tutors:
+          should be with our special plans designed for you.
         </p>
-        <div className="meet-tutor">
-          <Tutor name="Dr. M. A.Adedoyin" role="Computer Skills Tutor" />
+        <p className="mb-4 opacity-50 text-2xl font-bold">
+          {" "}
+          Our tutors will make you see the future and help you to get there.
+        </p>
+        <p className="mb-4 opacity-50 text-2xl font-bold">
+          {" "}
+          Our site has different tutors for all academic programmes, test
+          preparation, and skill development. There are tutors for every
+          learner/student. Also, there are live classes and recorded videos.
+        </p>
+        <p className="mb-4 opacity-50 text-2xl font-bold">
+          {" "}
+          There are tutors for nursery, primary, junior secondary, senior
+          secondary, undergraduate and postgraduate subjects/courses and pricing
+          is available upon request. No matter your level of study, you will
+          find online tutors:
+
+        </p>
+        <ul className="mb-4 opacity-50 text-2xl font-bold">
+          <li>Design Skills Tutors</li>
+          <li>English Tutors</li>
+          <li>Mathematics Tutors</li>
+          <li>Financial Accounting Tutors</li>
+          <li>Agricultural Skills Tutors</li>
+          <li>Music Tutors</li>
+          <li>Physics Tutors</li>
+          <li>French Tutors</li>
+          <li>Yoruba Tutors</li>
+          <li>Hausa Tutors</li>
+        </ul>
+
+        <button className="py-4 mt-6 px-6 bg-yellow-400 flex text-[#07294d] text-center rounded">
+          Request for Tutor
+        </button>
+        </div>
+
+        {/* <div className="meet-tutor mt-8 p-4 md:flex">
+          <Tutor name="Dr. M. A.Adedoyin" role="Computer Skills Tutor" img_src={drmarypic}/>
           <Tutor
+          img_src={pstsegun}
             name="Pst. S. E. A. Adedoyin"
             role="Financial Accounting Tutor"
           />
-          <Tutor name="Dr. P. W. Olugbemi" role="Agricultural Skills Tutor" />
-          <Tutor name="Mr. Avoaja TY." role="English Tutor" />
-        </div>
+          <Tutor img_src={drmarypic} name="Dr. P. W. Olugbemi" role="Agricultural Skills Tutor" />
+          <Tutor img_src={mrcaleb} name="Mr. Avoaja TY." role="English Tutor" />
+        </div> */}
       </section>
     </>
   );
