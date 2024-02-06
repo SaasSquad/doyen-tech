@@ -1,18 +1,57 @@
 import { useEffect, useState } from "react";
+import eleanorImg from "../assets/Images/Eleanor.jpg"
+import jamesImg from "../assets/Images/ALICE.jpg"
+import monicaImg from "../assets/Images/SERGIO.jpg"
 
 const  Feedback= () => {
     const [currentIndex, setCurrentIndex ] = useState(0);
 
-    const divs = [<div key={1} className="flex flex-col mx-5 pl-20 pr-20 bg-[#334e6b] pt-10"> 
+    const divs = [<div key={1}><div  className="flex flex-col mx-5 pl-20 pr-20 bg-[#334e6b] pt-10 pb-10"> 
         <h1>Fantastic! Great Instructor!</h1>
         <p className="whitespace-normal text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem cumque quod fugit magni esse, aperiam commodi </p>
-    </div>, <div key={2} className="flex flex-col mx-5 pl-20 pr-20 bg-[#334e6b] pt-10">
+    </div>
+    <div className="flex flex-row mt-10">
+        <img src={jamesImg} alt="" className="h-20 rounded-full ml-10" />
+        <span className="ml-5">
+        <h1>
+            James Smith
+        </h1>
+        <p>
+            App developer
+        </p>
+        </span>
+        
+    </div>
+    </div>, <div key={2}> <div className="flex flex-col mx-5 pl-20 pr-20 bg-[#334e6b] pt-10 pb-10">
                 <h1>Fantastic! Great Instructor!</h1>
                 <p className="flex whitespace-normal  text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem cumque quod fugit magni esse, a</p>
-            </div>, <div key={3} className="flex flex-col mx-5 pl-20 pr-20 bg-[#334e6b] pt-10">
+            </div>
+            <div  className="flex flex-row mt-10">
+            <img src={monicaImg} alt="" className="h-20 rounded-full ml-10" />
+        <span className="ml-5">
+        <h1>
+            Monica Blew
+        </h1>
+        <p>
+            UX Designer
+        </p>
+        </span>
+            </div>
+            </div>, <div key={3} ><div className="flex flex-col mx-5 pl-20 pr-20 bg-[#334e6b] pt-10 pb-10">
                 <h1>Fantastic! Great Instructor!</h1>
-                <p className="whitespace-normal  text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem cumque quod fugit magni esse, aperiam commodi quaera</p>
-            </div>]
+                <p className="whitespace-normal  text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem cumque quod fugit magni esse, </p>
+            </div>
+            <div  className="flex flex-row mt-10">
+            <img src={eleanorImg} alt="" className="h-20 rounded-full ml-10" />
+        <span className="ml-5">
+        <h1>
+            Eleanor Baker
+        </h1>
+        <p>
+            CFO Apple Corp
+        </p>
+        </span>
+            </div></div>]
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -34,9 +73,10 @@ const  Feedback= () => {
             <h3 className="text-xl font-bold">Feedback</h3>
             <h1 className="text-4xl font-bold pt-5 pb-10">What Student Say</h1>
         </div>
-        <div className="flex flex-row whitespace-nowrap overflow-x-scroll pb-30">
+        <div className="flex flex-row whitespace-nowrap overflow-x-auto no-scrollbar pb-10">
             {divs.map((div) => div)}
         </div>
+        <div className="pl-40 pb-10"><button className="w-5 h-5 bg-yellow-500 rounded-full"></button><button  className="w-5 h-5 bg-gray-500 rounded-full ml-5"></button><button  className="w-5 h-5 bg-gray-500 rounded-full ml-5"></button></div>
         </div>
         </>
      );

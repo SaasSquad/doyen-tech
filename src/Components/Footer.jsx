@@ -76,8 +76,9 @@ const Footer = () => {
             </section>
         </div>
         <div className="bg-[#021D3A] text-white text-center pt-10 pb-10 lg:flex lg:flex-row lg:px-10">
-            <p className="pr-20">Doyen Emerging Technology 2020, All rights reserved.</p> <br />
-            <span>Online Tutoring |&#160;</span><span> Online Shop |&#160;</span><span> Mobile App |&#160;</span><br /><span> Legal & Policies |&#160; </span><span> FAQ</span>
+        <span>Online Tutoring |&#160;</span><span> Online Shop |&#160;</span><span> Mobile App &#160;</span><br /><span> Legal & Policies |&#160; </span><span> FAQ</span>
+        <br /> <br />
+            <p className="pr-15">Doyen Emerging Technology 2020, All rights reserved.</p> <br />
         </div>
         </>
     )
