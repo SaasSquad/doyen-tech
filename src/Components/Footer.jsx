@@ -3,9 +3,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
+    const today = new Date
+
     return(
         <>
-        <div className="mt-0 bg-[#07294d] w-screen px-3 text-white block relative lg:flex lg:flex-row lg:pb-10">
+        <div className="mt-0 bg-[#07294d] px-3 text-white block relative lg:flex lg:flex-row px-4 lg:px-12 lg:pb-10">
             <section className="pt-20 lg:w-3/12 lg:pr-10">
             <img src={logo} alt="" className="w-40 pb-10"/>
                 <p>Doyen Emerging Technologies (doyeneTech) is  perfect for online courses and various skills development. It’s a complete solution with emerging technology tutors.</p>
