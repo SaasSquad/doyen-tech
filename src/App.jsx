@@ -28,17 +28,16 @@ import UniProg from "./Pages/UniProg"
 import Vacancies from "./Pages/Vacancies"
 import Footer from "./Components/Footer"
 import Header from './Components/Header';
-import LoginPage from './Pages/LoginPage';
+// import LoginPage from './Pages/LoginPage';
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
-      {/* <Header /> */}
+      <Header />
       <Routes>
-      <Route path="/" element={<LoginPage />} />
-        {/* <Route path="/" element={<HomePage />} /> */}
+        <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/academic" element={<Academic />} />
         <Route path="/applications" element={<Applications />} />
