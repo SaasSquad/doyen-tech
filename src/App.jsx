@@ -28,7 +28,8 @@ import UniProg from "./Pages/UniProg"
 import Vacancies from "./Pages/Vacancies"
 import Footer from "./Components/Footer"
 import Header from './Components/Header';
-// import LoginPage from './Pages/LoginPage';
+import LoginPage from './Pages/LoginPage';
+import RegisterPage from './Pages/RegisterPage';
 
 function App() {
 
@@ -63,6 +64,8 @@ function App() {
         <Route path="/testprep" element={<TestPrep />} />
         <Route path="/uniprog" element={<UniProg />} />
         <Route path="/vacancies" element={<Vacancies />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
