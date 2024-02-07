@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-    const today = new Date
+    const currentYear = new Date().getFullYear();
 
     return(
         <>
@@ -80,7 +80,7 @@ const Footer = () => {
         <div className="bg-[#021D3A] text-white text-center pt-10 pb-10 lg:flex lg:flex-row lg:px-10">
         <span>Online Tutoring |&#160;</span><span> Online Shop |&#160;</span><span> Mobile App &#160;</span><br /><span> Legal & Policies |&#160; </span><span> FAQ</span>
         <br /> <br />
-            <p className="pr-15">Doyen Emerging Technology 2020, All rights reserved.</p> <br />
+            <p className="pr-15 lg:pl-20">Doyen Emerging Technology {currentYear}, All rights reserved.</p> <br />
         </div>
         </>
     )

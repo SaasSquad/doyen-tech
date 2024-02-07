@@ -65,7 +65,7 @@ function App() {
         <Route path="/uniprog" element={<UniProg />} />
         <Route path="/vacancies" element={<Vacancies />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
     </>
   )
