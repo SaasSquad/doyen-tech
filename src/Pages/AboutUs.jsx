@@ -70,24 +70,24 @@ const AboutUs = () => {
         </div>
     </div>
     <div className="bg-[#36516E] text-center items-center">
-        <div className="pt-10 pb-10">
-            <h1 className="text-3xl text-white font-bold pb-2">1250+</h1>
-            <p className="bg-yellow-500 ml-44 h-1 w-14 pt-0"></p>
+        <div className="pt-10 pb-10 lg:text-center lg:items-center lg:flex lg:justify-center lg:flex-col">
+            <h1 className="text-3xl text-white font-bold pb-2 lg:border-b-2 lg:border-yellow-600">1250+</h1>
+            <p className="bg-yellow-500 ml-44 h-1 w-14 pt-0 lg:hidden"></p>
             <p className="text-white pt-2">Student Enrolled</p>
         </div>
-        <div className="pt-10 pb-10">
-            <h1  className="text-3xl text-white font-bold pb-4">512+</h1>
-            <p className="bg-yellow-500 ml-44 h-1 w-14 pt-0"></p>
+        <div className="pt-10 pb-10 lg:text-center lg:items-center lg:flex lg:justify-center lg:flex-col">
+            <h1  className="text-3xl text-white font-bold pb-4 lg:border-b-2 lg:border-yellow-600">512+</h1>
+            <p className="bg-yellow-500 ml-44 h-1 w-14 pt-0 lg:hidden"></p>
             <p className="text-white pt-2">People Certified</p>
         </div>
-        <div className="pt-10 pb-10">
-            <h1  className="text-3xl text-white font-bold pb-4">890+</h1>
-            <p className="bg-yellow-500 ml-44 h-1 w-14 pt-0"></p>
+        <div className="pt-10 pb-10 lg:text-center lg:items-center lg:flex lg:justify-center lg:flex-col">
+            <h1  className="text-3xl text-white font-bold pb-4 lg:border-b-2 lg:border-yellow-600">890+</h1>
+            <p className="bg-yellow-500 ml-44 h-1 w-14 pt-0 lg:hidden"></p>
             <p className="text-white pt-2">Course Uploaded</p>
         </div>
-        <div className="pt-10 pb-10">
-            <h1   className="text-3xl text-white font-bold pb-4">170+</h1>
-            <p className="bg-yellow-500 ml-44 h-1 w-14 pt-0"></p>
+        <div className="pt-10 pb-10 lg:text-center lg:items-center lg:flex lg:justify-center lg:flex-col">
+            <h1   className="text-3xl text-white font-bold pb-4 lg:border-b-2 lg:border-yellow-600">170+</h1>
+            <p className="bg-yellow-500 ml-44 h-1 w-14 pt-0 lg:hidden"></p>
             <p className="text-white pt-2">Global Teachers</p>
         </div>
     </div>
